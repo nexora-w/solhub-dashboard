@@ -371,7 +371,7 @@ export default function Dashboard() {
   // Delete a text channel
   const deleteChannel = async (channelId: string) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/channels/${channelId}`, {
+      const response = await fetch(`${API_BASE_URL}/api/admin/channels/${channelId}`, {
         method: 'DELETE',
       })
 
